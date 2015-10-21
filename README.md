@@ -1,5 +1,7 @@
 # Boost.NumPy
 
+(This fork includes some small changes to allow Boost.NumPy to compile as a universal binary on Mac OS X)
+
 Boost.NumPy is an extension for Boost.Python that adds NumPy support.
 
 It is intended as a replacement for the old numeric support in

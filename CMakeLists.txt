@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 2.8.3)
 
 project( boost.numpy )
 
+# Added by Brad Neuberg to ensure universal binary produced on Mac OS X
+set(CMAKE_CXX_FLAGS "-arch x86_64 -arch i386")
+set(CMAKE_SHARED_LINKER_FLAGS "-arch x86_64 -arch i386")
+
 set(BUILD_TESTS ON CACHE BOOL "Build Boost.NumPy Tests")
 set(BUILD_EXAMPLES ON CACHE BOOL "Build Boost.NumPy Examples")
 
